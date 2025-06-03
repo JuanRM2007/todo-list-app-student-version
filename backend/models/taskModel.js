@@ -2,10 +2,9 @@ const db = require("../db");
 
 //Add a comment describing what this function does and what does it return
 const getTasks = async () => {
-  const res = await db.query(
-    //correct this SQL query to select all tasks from the database
-    "SELECT everything FROM tasks ORDER BY created_at DESC"
-  );
+  //correct this SQL query to select all tasks from the database
+  const res = await db.query(SELECT * FROM tasks ORDER BY created_at DESC);
+  
   return res.rows;
 };
 
